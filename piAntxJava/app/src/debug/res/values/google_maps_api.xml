@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=35:E9:B7:63:C0:E3:AB:AC:55:E4:DA:67:44:A2:3A:45:AE:39:6B:A8%3Bcom.example.piantxjava
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.example.piantxjava
+
+    SHA-1 certificate fingerprint:
+    35:E9:B7:63:C0:E3:AB:AC:55:E4:DA:67:44:A2:3A:45:AE:39:6B:A8
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB2a2-Wl8ovWJyBpuSguTO1y2a50lh3Nqw</string>
+</resources>

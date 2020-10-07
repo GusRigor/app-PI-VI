@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">piAntxJava</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="titleLixeiraText">SAAALVEE</string>
+    <string name="map_key" translatable="false">AIzaSyB2a2-Wl8ovWJyBpuSguTO1y2a50lh3Nqw</string>
+</resources>

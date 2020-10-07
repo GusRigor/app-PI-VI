@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@drawable/bg_round">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a_logo"
+        android:id="@+id/img_Lixeira"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:text="@string/titleLixeiraText"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/title_Lixeira"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:text="Descrição\ndescrição\ndescrição\ndescrição"
+        android:fontFamily="arial"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/descricao_Lixeira"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_retorno"
+        android:text="Fechar"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:background="@color/black"
+
+        />
+
+</LinearLayout>
