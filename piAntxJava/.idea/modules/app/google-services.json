@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "289579911555",
+    "firebase_url": "https://piantxjava.firebaseio.com",
+    "project_id": "piantxjava",
+    "storage_bucket": "piantxjava.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289579911555:android:24379ab3a2e8234a7b0eb6",
+        "android_client_info": {
+          "package_name": "com.example.piantxjava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289579911555-f5798k2ah1h1henj0n16da2hl2phgokn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.piantxjava",
+            "certificate_hash": "35e9b763c0e3abac55e4da6744a23a45ae396ba8"
+          }
+        },
+        {
+          "client_id": "289579911555-1n9o18646fsfie8ug73cs9gtq33uvec7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIHe82eaXJ5vTtXgyUTJ7C-Oc7CL3tb5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289579911555-1n9o18646fsfie8ug73cs9gtq33uvec7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "91188996714",
+    "firebase_url": "https://notifypivi.firebaseio.com",
+    "project_id": "notifypivi",
+    "storage_bucket": "notifypivi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91188996714:android:9b4a137544018b25ab7813",
+        "android_client_info": {
+          "package_name": "com.example.piantxjava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91188996714-k6q11msjofichv3avs1oaonv89pa160c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcu4Zyo1dygroikiafsW3E4af2zSQH6jk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91188996714-k6q11msjofichv3avs1oaonv89pa160c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
