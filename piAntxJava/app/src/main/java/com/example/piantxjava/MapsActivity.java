@@ -158,7 +158,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         //lixeira amarela_grande
         if(percent > 45.0){
-            return BitmapDescriptorFactory.fromResource(R.drawable.amarelo);
+            return BitmapDescriptorFactory.fromResource(R.drawable.amarelo1);
         }
         //lixeira verde_grande
         if(percent > 10.0) {
