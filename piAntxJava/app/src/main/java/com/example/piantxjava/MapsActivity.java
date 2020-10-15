@@ -5,9 +5,9 @@ import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
@@ -15,8 +15,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
@@ -154,15 +154,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public BitmapDescriptor selecionarIcone(double percent){
         //lixeira vermelinha
         if(percent > 85.0) {
-            return BitmapDescriptorFactory.fromResource(R.drawable.lixeira);
+            return BitmapDescriptorFactory.fromResource(R.drawable.vermelho);
         }
-        //lixeira amarela
+        //lixeira amarela_grande
         if(percent > 45.0){
-            return BitmapDescriptorFactory.fromResource(R.drawable.lixeira);
+            return BitmapDescriptorFactory.fromResource(R.drawable.amarelo);
         }
-        //lixeira verde
+        //lixeira verde_grande
         if(percent > 10.0) {
-            return BitmapDescriptorFactory.fromResource(R.drawable.lixeira);
+            return BitmapDescriptorFactory.fromResource(R.drawable.verde1);
         }
         //lixeira vazia
         return BitmapDescriptorFactory.fromResource(R.drawable.lixeira);
@@ -246,10 +246,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Button btRetorno = dialog.findViewById(R.id.bt_retorno);
         tituloLixeira = dialog.findViewById(R.id.title_Lixeira);
         descricaoLixeira = dialog.findViewById(R.id.descricao_Lixeira);
+        ImageView img = dialog.findViewById(R.id.img_Lixeira);
 
         Trashe trashe = (Trashe) marker.getTag();
         tituloLixeira.setText(trashe.getName());
         descricaoLixeira.setText(montaDescricao(trashe));
+        img.setImageDrawable(selecionarLixeiraCor(trashe.getPercentage()));
 
         btRetorno.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -259,6 +261,23 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         });
         dialog.show();
         return true;
+    }
+
+    public Drawable selecionarLixeiraCor(double percent){
+        //lixeira vermelinha
+        if(percent > 85.0) {
+            return getResources().getDrawable(R.drawable.vermelha_grande);
+        }
+        //lixeira amarela_grande
+        if(percent > 45.0){
+            return getResources().getDrawable(R.drawable.amarela_grande);
+        }
+        //lixeira verde_grande
+        if(percent > 10.0) {
+            return getResources().getDrawable(R.drawable.verde_grande);
+        }
+        //lixeira vazia
+        return getResources().getDrawable(R.drawable.verde_grande);
     }
 
     private String montaDescricao(Trashe trashe) {
