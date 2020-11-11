@@ -154,15 +154,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public BitmapDescriptor selecionarIcone(double percent){
         //lixeira vermelinha
         if(percent > 85.0) {
-            return BitmapDescriptorFactory.fromResource(R.drawable.vermelho);
+            return BitmapDescriptorFactory.fromResource(R.drawable.lixeira);
         }
         //lixeira amarela_grande
         if(percent > 45.0){
-            return BitmapDescriptorFactory.fromResource(R.drawable.amarelo1);
+            return BitmapDescriptorFactory.fromResource(R.drawable.lixeira);
         }
         //lixeira verde_grande
         if(percent > 10.0) {
-            return BitmapDescriptorFactory.fromResource(R.drawable.verde1);
+            return BitmapDescriptorFactory.fromResource(R.drawable.lixeira);
         }
         //lixeira vazia
         return BitmapDescriptorFactory.fromResource(R.drawable.lixeira);
