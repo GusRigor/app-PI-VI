@@ -24,8 +24,7 @@ public class Trashes {
     public List<Trashe> getTrashes() {
         return trashes;
     }
-    public void setTrashes(List<Trashe> trashes) {
-        this.trashes = trashes;
+    public void setTrashes(List<Trashe> trashes) { this.trashes = trashes;
     }
 }
 

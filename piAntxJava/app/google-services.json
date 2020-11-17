@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "91188996714",
-    "firebase_url": "https://notifypivi.firebaseio.com",
-    "project_id": "notifypivi",
-    "storage_bucket": "notifypivi.appspot.com"
+    "project_number": "383170021723",
+    "firebase_url": "https://pi-v-e0ea4.firebaseio.com",
+    "project_id": "pi-v-e0ea4",
+    "storage_bucket": "pi-v-e0ea4.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:91188996714:android:9b4a137544018b25ab7813",
+        "mobilesdk_app_id": "1:383170021723:android:2bdb93d424c85913b2327e",
         "android_client_info": {
           "package_name": "com.example.piantxjava"
         }
       },
       "oauth_client": [
         {
-          "client_id": "91188996714-k6q11msjofichv3avs1oaonv89pa160c.apps.googleusercontent.com",
+          "client_id": "383170021723-kcstshgdn83lbctslvdfiq92pilfnejt.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBcu4Zyo1dygroikiafsW3E4af2zSQH6jk"
+          "current_key": "AIzaSyA7PndKnazBCuN080nFjPjb9McAzZyhJ7M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "91188996714-k6q11msjofichv3avs1oaonv89pa160c.apps.googleusercontent.com",
+              "client_id": "383170021723-kcstshgdn83lbctslvdfiq92pilfnejt.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

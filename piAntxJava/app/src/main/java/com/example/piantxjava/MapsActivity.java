@@ -52,7 +52,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     private static final int LOCATION_REQUEST = 500;
     FusedLocationProviderClient fusedLocationProviderClient;
-    private Button btGerarRota;
+    private Button btGerarRota, btAtualizar;
     private Polyline polyline = null;
     LatLng me;
     List<LatLng> latLongList = new ArrayList<>();
@@ -66,6 +66,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_maps);
 
         btGerarRota = findViewById(R.id.bt_gerarRota);
+        btAtualizar = findViewById(R.id.bt_atualizarMapa);
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -86,6 +87,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }catch (ExecutionException e){
             e.printStackTrace();
         }
+
+        btAtualizar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openNavActivity();
+            }
+        });
 
         btGerarRota.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -271,5 +279,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         return "Porcentagem: " + trashe.getPercentage()
                 +"\nPrioridade: "+ trashe.getPriority()
                 +"\nÚltima atualização: \n"+ trashe.getLast_update();
+    }
+    private void openNavActivity(){
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
     }
 }

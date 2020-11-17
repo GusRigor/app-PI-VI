@@ -25,7 +25,9 @@ public class HTTPService extends AsyncTask<Void, Void, Trashes> {
             URL url = new URL("https://pix-bec.herokuapp.com/antx/trashes/piv0069");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
+            connection.setRequestProperty("Content-type", "application/json");
             connection.setRequestProperty("Accept", "application/json");
+            connection.setDoOutput(true);
             connection.setConnectTimeout(5000);
             connection.connect();
 
